@@ -1,0 +1,331 @@
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+    display: flex;
+   background-color: white;
+   position: fixed;
+   width: 100%;
+  
+}
+.header img{
+    width: 200px;
+    
+}
+.edge{
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+    font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.container img{
+    width: 100%;
+    
+     height: 900px;
+}
+.nodisplay {
+    display: none;  /* hidden by default */
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.one {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+.men p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.edge p:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.aboutus h3{
+    font-size: 40px;
+    color: rgb(0, 0, 92);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+.aboutus h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.aboutus p{
+    font-size: 27px;
+}
+.promise h3{
+    margin-top: -210px;
+      font-size: 40px;
+    color: rgb(0, 0, 92);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+.promise h5{
+  
+     font-size: 30px;
+
+}
+button{
+     margin-left: 90px;
+     width: 170px;
+     background-color: aqua;
+     border: none;
+     color: white;
+     border-radius: 5px;
+     height: 45px;
+     text-align: center;
+    
+     margin-bottom: 30px;
+}
+.about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 100px; 
+}
+
+.service{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 40px;
+}
+.ourservice h3{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.ourservice{
+    background-color: blue;
+    width: 100%;
+}
+.example img{
+       width: 340px;
+       height: 38vh;
+}
+.word {
+    color: white;
+    padding-bottom: 70px;
+}
+.fea{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.word h4{
+    font-size: 19px;
+    font-weight: bold;
+}
+.projects:hover{
+    cursor: pointer;
+}
+.projects {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.primage {
+  display: flex;
+  gap: 20px;              
+  overflow-x: auto;       
+  padding: 10px;
+  scroll-behavior: smooth; 
+  margin-top: 20px;
+  padding-left: 40px;
+}
+
+.primage img {
+  height: 350px;
+  flex-shrink: 0;         
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.primage::-webkit-scrollbar {
+  height: 8px;
+}
+
+.primage::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.primage::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.clients{
+     display: flex;
+
+}
+.cli{
+    text-align: center;
+  
+   font-weight: bold;
+   font-size: 30px;
+  
+}
+.foot{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding-top: 90px;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+.build button{
+          background-color:blue;
+          border: 2px solid white;
+          margin-top: 20px;
+          border-radius: 10px;
+          
+}
+.build button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.line{
+    border-top: 2px solid white;
+    margin-top: 10px;
+}
+.call{
+    text-align:  left;
+    font-size: 18px;
+    margin-top: 10px;
+}
+a{
+    color: white;
+}
+
+@media screen and (max-width: 495px){
+    .header img{
+        width: 100px;
+    }
+    .container img{
+        margin-top: 90px;
+        height: 400px;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
+     .promise h3{
+            
+            margin-top: 90px;
+    }
+    .fea{
+        font-size: 19px;
+        padding: 4px;
+    }
+    .build button{
+        margin-right: 70px;
+    }
+    .client img{
+             width: 80px;
+    }
+  .about {
+    padding: 30px 20px;
+    gap: 20px;
+  }    
+  .aboutus h3 {
+    font-size: 25px; 
+  }
+
+  .aboutus h5 {
+    font-size: 20px;
+  }
+
+  .aboutus p {
+    font-size: 16px;
+  }
+}
+    
+
+@media screen and (max-width: 749px) {
+    .edge {
+        display: none; 
+    }
+    .nodisplay {
+        display: flex; 
+        margin-left: auto;
+    }
+    .container img{
+        height: 600px;
+        margin-top: 30px;
+    }
+     .promise h3{
+            
+            margin-top: 390px;
+    }
+        .about {
+    grid-template-columns: 1fr; 
+    padding: 50px 40px;
+    text-align: center; 
+  }
+
+}
+
+@media screen and (max-width: 925px){
+            .edge{
+                gap: 20px;
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            .container img{
+        height: 600px;
+        margin-top: 30px;
+    }
+      .promise{
+        margin-top: -320px;
+      }
+            .aboutus h5{
+                font-size: 35;
+            }
+        .example img{
+       width: 250px;
+       height: 20vh;
+       }
+}
+
